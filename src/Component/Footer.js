@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -13,16 +14,15 @@ const Footer = () => {
                                     <div className="heading-border-line"/>
                                 </div>
                                 <p className="description">
-                                    Capitalize on low hanging fruit to identify a ballpark value added
-                                    activity to beta test.
+                                    Prasad Logistics & Services Pvt. Ltd. is a leading name in the area of providing expert and professional, trust-worthy Covering Services of commodity loaded rakes using tarpaulin, escorting of loaded rakes and all other value added services related to this across in Pan India. We have a strong nationwide presence with branches and regional branches spread across the country.
                                 </p>
                                 <div className="footer-btn">
-                                    <a
+                                    <Link
                                         className="readon started footer-more blue-more"
-                                        href="contact-us-1.html"
+                                        to="/about-us"
                                     >
                                         <span className="btn-txt">Discover More</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-lg-8">
@@ -85,7 +85,11 @@ const Footer = () => {
                                                 </div>
                                                 <div className="address-text">
                                                     <div className="text">
-                                                        <a href="tel:+555567812340">+555 5678 12340</a>
+                                                        <a href="tel:+555567812340">PLSPL Office - 8967655200</a><br/>
+                                                        <a href="tel:+555567812340">Vizag Office : 9000197082</a><br/>
+                                                        <a href="tel:+555567812340">Manoj Prasad : 7865060568</a><br/>
+                                                        <a href="tel:+555567812340">Pradip Maurya : 9378221855</a><br/>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -95,7 +99,12 @@ const Footer = () => {
                                                 </div>
                                                 <div className="address-text">
                                                     <div className="text">
-                                                        <span className="des">3500 M. River Rd. New Work</span>
+                                                        <span className="des"><p>Plot No. - 58, Khatian No. &ndash; 22,<br/>Holding Premises No. &ndash; 71/14N,<br/>
+                                                            C/o Daya Shankar Koiri,<br/>
+L.C. More Kulti,<br/>
+P.O. &amp; P.S. &ndash; Kulti,<br/>
+Asansol,Paschim Bardhaman,<br/>
+West Bengal</p></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -105,7 +114,7 @@ const Footer = () => {
                                                 </div>
                                                 <div className="address-text">
                                                     <div className="text">
-                                                        <a href="mailto:info@yourmail.com">info@yourmail.com</a>
+                                                        <a href="mailto:contact@prasadlogistics.com">contact@prasadlogistics.com</a>
                                                     </div>
                                                 </div>
                                             </div>
