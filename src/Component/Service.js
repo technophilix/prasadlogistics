@@ -1,4 +1,8 @@
 import React from 'react';
+import ser1 from "../realassets/ser-1.png"
+import ser2 from "../realassets/ser-2.png"
+import ser3 from "../realassets/ser-3.png"
+import ser4 from "../realassets/ser-4.png"
 
 const Service = () => {
     return (
@@ -18,7 +22,7 @@ const Service = () => {
                     <div className="services-item">
                         <div className="services-wrap">
                             <div className="services-icon">
-                                <img src="assets/images/services/style8/ser-1.png" alt=""/>
+                                <img src={ser1} alt=""/>
                             </div>
                             <div className="services-content">
                                 <h6 className="title">
@@ -35,7 +39,7 @@ const Service = () => {
                     <div className="services-item">
                         <div className="services-wrap">
                             <div className="services-icon">
-                                <img src="assets/images/services/style8/ser-2.png" alt=""/>
+                                <img src={ser2} alt=""/>
                             </div>
                             <div className="services-content">
                                 <h6 className="title">
@@ -52,11 +56,11 @@ const Service = () => {
                     <div className="services-item">
                         <div className="services-wrap">
                             <div className="services-icon">
-                                <img src="assets/images/services/style8/ser-3.png" alt=""/>
+                                <img src={ser3} alt=""/>
                             </div>
                             <div className="services-content">
                                 <h6 className="title">
-                                    <a href="services-style-1.html">Process &amp; Tools</a>
+                                    <a href="#">Process &amp; Tools</a>
                                 </h6>
                                 <p className="services-txt">
                                     Tailored Tarpaulin Solutions to Fit Your Unique Cargo Requirements.
@@ -69,7 +73,7 @@ const Service = () => {
                     <div className="services-item">
                         <div className="services-wrap">
                             <div className="services-icon">
-                                <img src="assets/images/services/style8/ser-4.png" alt=""/>
+                                <img src={ser4} alt=""/>
                             </div>
                             <div className="services-content">
                                 <h6 className="title">

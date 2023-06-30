@@ -1,25 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
+import logo from "../realassets/logo-green2.png"
 const Header = () => {
     return (
         <>
 
             <div className="offwrap" />
-            {/*Preloader start here*/}
-            <div id="pre-load">
-                <div id="loader" className="loader">
-                    <div className="loader-container">
-                        <div className="loader-icon">
-                            <img
-                                src="assets/images/fav.png"
-                                alt="Bcom - Consulting Business HTML Template "
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
 
             <div className="full-width-header">
                 {/*Header Start*/}
@@ -33,13 +19,13 @@ const Header = () => {
                                         <Link to={'/'}>
                                             <img
                                                 className="normal-logo"
-                                                src="assets/images/logo-green2.png"
+                                                src={logo}
                                                 alt="logo"
 
                                             />
                                             <img
                                                 className="sticky-logo"
-                                                src="assets/images/logo-green2.png"
+                                                src={logo}
                                                 alt="logo"
                                             />
                                         </Link>

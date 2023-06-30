@@ -1,5 +1,9 @@
 import React from 'react';
-
+import testi1 from "../realassets/testi-1.png"
+import shape3 from  "../realassets/shape3.png"
+import rating2 from  "../realassets/ratting2.png"
+import testi2 from  "../realassets/testi-2.png"
+import testi3 from  "../realassets/testi-3.png"
 const Testimonial = () => {
     return (
         <div className="rs-testimonial testimonial-style1 testimonial-modify1 gray-bg9 pt-135 pb-150 md-pt-75 md-pb-80">
@@ -7,9 +11,7 @@ const Testimonial = () => {
                 <div className="sec-title text-center mb-50">
                     <span className="sub-text sub-text2 sub-text5">Testimonial</span>
                     <h2 className="title">
-                        What is reader's says
-                        <br/>
-                        about my books
+                        Transformative Experience: A Testimonial of Unparalleled Growth and Inspiration
                     </h2>
                 </div>
                 <div className="slider testi-slide-1">
@@ -17,12 +19,12 @@ const Testimonial = () => {
                         <div className="testi-images">
                             <div className="image-wrap">
                                 <img
-                                    src="assets/images/testimonial/style3/testi-1.png"
+                                    src={testi1}
                                     alt="Images"
                                 />
                                 <div className="animate-shape">
                                     <img
-                                        src="assets/images/testimonial/style1/shape3.png"
+                                        src={shape3}
                                         alt="Images"
                                     />
                                 </div>
@@ -32,7 +34,7 @@ const Testimonial = () => {
                             <div className="testi-content">
                                 <div className="rattings">
                                     <img
-                                        src="assets/images/testimonial/style3/ratting2.png"
+                                        src={rating2}
                                         alt="Images"
                                     />
                                 </div>
@@ -53,12 +55,12 @@ const Testimonial = () => {
                         <div className="testi-images">
                             <div className="image-wrap">
                                 <img
-                                    src="assets/images/testimonial/style3/testi-2.png"
+                                    src={testi2}
                                     alt="Images"
                                 />
                                 <div className="animate-shape">
                                     <img
-                                        src="assets/images/testimonial/style1/shape3.png"
+                                        src={shape3}
                                         alt="Images"
                                     />
                                 </div>
@@ -68,7 +70,7 @@ const Testimonial = () => {
                             <div className="testi-content">
                                 <div className="rattings">
                                     <img
-                                        src="assets/images/testimonial/style3/ratting2.png"
+                                        src={rating2}
                                         alt="Images"
                                     />
                                 </div>
@@ -89,12 +91,12 @@ const Testimonial = () => {
                         <div className="testi-images">
                             <div className="image-wrap">
                                 <img
-                                    src="assets/images/testimonial/style3/testi-3.png"
+                                    src={testi3}
                                     alt="Images"
                                 />
                                 <div className="animate-shape">
                                     <img
-                                        src="assets/images/testimonial/style1/shape3.png"
+                                        src={shape3}
                                         alt="Images"
                                     />
                                 </div>
@@ -104,7 +106,7 @@ const Testimonial = () => {
                             <div className="testi-content">
                                 <div className="rattings">
                                     <img
-                                        src="assets/images/testimonial/style3/ratting2.png"
+                                        src={rating2}
                                         alt="Images"
                                     />
                                 </div>
@@ -125,12 +127,12 @@ const Testimonial = () => {
                         <div className="testi-images">
                             <div className="image-wrap">
                                 <img
-                                    src="assets/images/testimonial/style3/testi-1.png"
+                                    src={testi1}
                                     alt="Images"
                                 />
                                 <div className="animate-shape">
                                     <img
-                                        src="assets/images/testimonial/style1/shape3.png"
+                                        src={shape3}
                                         alt="Images"
                                     />
                                 </div>
@@ -140,7 +142,7 @@ const Testimonial = () => {
                             <div className="testi-content">
                                 <div className="rattings">
                                     <img
-                                        src="assets/images/testimonial/style3/ratting2.png"
+                                        src={rating2}
                                         alt="Images"
                                     />
                                 </div>
@@ -161,12 +163,12 @@ const Testimonial = () => {
                         <div className="testi-images">
                             <div className="image-wrap">
                                 <img
-                                    src="assets/images/testimonial/style3/testi-2.png"
+                                    src={testi2}
                                     alt="Images"
                                 />
                                 <div className="animate-shape">
                                     <img
-                                        src="assets/images/testimonial/style1/shape3.png"
+                                        src={shape3}
                                         alt="Images"
                                     />
                                 </div>
@@ -176,7 +178,7 @@ const Testimonial = () => {
                             <div className="testi-content">
                                 <div className="rattings">
                                     <img
-                                        src="assets/images/testimonial/style3/ratting2.png"
+                                        src={rating2}
                                         alt="Images"
                                     />
                                 </div>

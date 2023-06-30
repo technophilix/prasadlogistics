@@ -1,35 +1,43 @@
 import React from 'react';
+import bk1 from "../realassets/bk1.png"
+import bk2 from "../realassets/bk2.png"
+import bk3 from "../realassets/bk3.png"
+import bk4 from "../realassets/bk4.png"
+import bk5 from "../realassets/bk5.png"
+import bk6 from "../realassets/bk6.png"
+
+
 
 const Gallery = () => {
 
    const services = [{
       title:"Tarpaulin Covering",
-      image:"assets/images/book/bk1.png"
+      image:bk1
 
 
    },{
       title:"Plot Covering",
-      image:"assets/images/book/bk2.png"
+      image:bk2
 
 
    },{
       title:"Wagon Door Packing / Sealing & Water Proofing",
-      image:"assets/images/book/bk3.png"
+      image:bk3
 
 
    },{
       title:"Escorting Service",
-      image:"assets/images/book/bk4.png"
+      image:bk4
 
 
    },{
       title:"Excess Load Adjustment Services",
-      image:"assets/images/book/bk5.png"
+      image:bk5
 
 
    },{
       title:"Inspection Services",
-      image:"assets/images/book/bk6.png"
+      image:bk6
 
 
    }
@@ -48,11 +56,12 @@ const Gallery = () => {
                     <h2 className="title">Services</h2>
                 </div>
                 <div className="row">
-                    {services.map((sr,i)=>(    <div className="col-xl-4 col-md-6 xl-mb-30">
-                        <div className="book-item">
+                    {services.map((sr,i)=>(
+                        <div className="col-xl-4 col-md-6 xl-mb-30" key={i}>
+                        <div className="book-item" >
                             <div className="read-wrap">
                                 <div className="read-img">
-                                    <a href="services-1.html">
+                                    <a href="#">
                                         <img src={sr.image} alt="Book"/>
                                     </a>
                                 </div>

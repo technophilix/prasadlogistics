@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import feature9 from "../realassets/feature-img9.png"
 
 const Features = () => {
     return (
@@ -63,7 +64,7 @@ const Features = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="images-wrap3">
-                            <img src="assets/images/feature/feature-img9.png" alt="Images"/>
+                            <img src={feature9} alt="Images"/>
                         </div>
                     </div>
                 </div>

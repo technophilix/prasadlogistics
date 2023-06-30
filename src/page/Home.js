@@ -6,6 +6,11 @@ import Gallery from "../Component/Gallery";
 import Testimonial from "../Component/Testimonial";
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import brn from "../realassets/bnr-img.png"
+import shape1 from "../realassets/shape-1.png"
+import shape2 from "../realassets/shape-2.png"
+import bookmockup from "../realassets/book-mockup.png"
+
 
 const Home = () => {
     return (
@@ -45,20 +50,20 @@ const Home = () => {
                                 <div className="images-wrap">
                                     <img
                                         className="wow fadeInUp"
-                                        src="assets/images/banner/style7/bnr-img.png"
+                                        src={brn}
                                         alt="Images"
                                     />
                                     <div className="shape-img one">
                                         <img
                                             className="veritcal3"
-                                            src="assets/images/banner/style7/shape-1.png"
+                                            src={shape1}
                                             alt="Images"
                                         />
                                     </div>
                                     <div className="shape-img two">
                                         <img
                                             className="horizontal"
-                                            src="assets/images/banner/style7/shape-2.png"
+                                            src={shape2}
                                             alt="Images"
                                         />
                                     </div>
@@ -140,7 +145,7 @@ const Home = () => {
                         <div className="col-lg-6">
                             <div className="cta-img text-right md-left">
                                 <img
-                                    src="assets/images/cta/style1/book-mockup.png"
+                                    src={bookmockup}
                                     alt="Images"
                                 />
                             </div>
