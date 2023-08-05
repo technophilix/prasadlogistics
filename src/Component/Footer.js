@@ -34,44 +34,19 @@ const Footer = () => {
                                         </div>
                                         <ul className="site-map">
                                             <li>
-                                                <a href="about-us.html">About Us</a>
+                                                <a href="/about-us">About Us</a>
                                             </li>
                                             <li>
-                                                <a href="services-1.html">Services</a>
+                                                <a href="/services">Services</a>
                                             </li>
+
                                             <li>
-                                                <a href="faq.html">FAQ</a>
-                                            </li>
-                                            <li>
-                                                <a href="blog-standard.html">Blog Standard</a>
-                                            </li>
-                                            <li>
-                                                <a href="contact-1.html">Contact Us</a>
+                                                <a href="/contact">Contact Us</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-4 md-mb-10">
-                                        <div className="footer-inner mb-60">
-                                            <h5 className="footer-title">Portfolio</h5>
-                                            <div className="heading-border-line"/>
-                                        </div>
-                                        <ul className="site-map">
-                                            <li>
-                                                <a href="advanced-analytic.html">Advanced Analytic</a>
-                                            </li>
-                                            <li>
-                                                <a href="business-services.html">Business Services</a>
-                                            </li>
-                                            <li>
-                                                <a href="consulting-services.html">Consulting Services</a>
-                                            </li>
-                                            <li>
-                                                <a href="consumer-product.html">Consumer Product</a>
-                                            </li>
-                                            <li>
-                                                <a href="financial-services.html">Financial Services</a>
-                                            </li>
-                                        </ul>
+
                                     </div>
                                     <div className="col-lg-4">
                                         <div className="footer-inner mb-60">
@@ -127,19 +102,10 @@ West Bengal</p></span>
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <i className="fa fa-twitter"/>
+                                                    <i className="fa fa-youtube"/>
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fa fa-linkedin"/>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fa fa-pinterest-p"/>
-                                                </a>
-                                            </li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -154,25 +120,19 @@ West Bengal</p></span>
                                 <div className="col-lg-6 md-mb-10 text-lg-end text-center order-last">
                                     <ul className="copy-right-menu">
                                         <li>
-                                            <a href="#">About</a>
+                                            <a href="/about-us">About</a>
                                         </li>
-                                        <li>
-                                            <a href="#">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog Standard</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact</a>
+                                       <li>
+                                            <a href="/contact">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="copyright text-lg-start text-center">
                                         <p>
-                                            © 2023 Bcom. Designed By{" "}
-                                            <a href="https://rstheme.com/" target="blank">
-                                                RSTheme
+                                            © 2023 Prasad Logistics & Services Pvt Ltd. Designed By{" "}
+                                            <a href="https://facebook.com/designBAW/" target="blank">
+                                                Black Art Works
                                             </a>
                                         </p>
                                     </div>

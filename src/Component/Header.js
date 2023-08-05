@@ -1,7 +1,50 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import logo from "../realassets/logo-green2.png"
+import {buckedID, client, collectionID, databaseID, account} from "../Appwrite";
 const Header = () => {
+
+    const [recipient, setRecipient] = useState('');
+    const [subject, setSubject] = useState('');
+    const [body, setBody] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleRecipientChange = (e) => {
+        setRecipient(e.target.value);
+    };
+
+    const handleSubjectChange = (e) => {
+        setSubject(e.target.value);
+    };
+
+    const handleBodyChange = (e) => {
+        setBody(e.target.value);
+    };
+
+    const handleSendEmail = async () => {
+        setIsLoading(true);
+
+        try {
+            const response = await client.functions.createExecution('sendEmail', {
+                to: recipient,
+                subject: subject,
+                text: body,
+            });
+
+            console.log('Email sent:', response);
+            setIsModalOpen(false);
+        } catch (error) {
+            console.error('Error sending email:', error);
+        }
+
+        setIsLoading(false);
+    };
+
+
+
+
+
     return (
         <>
 
@@ -21,6 +64,7 @@ const Header = () => {
                                                 className="normal-logo"
                                                 src={logo}
                                                 alt="logo"
+
 
                                             />
                                             <img
@@ -42,6 +86,9 @@ const Header = () => {
                                                     </li>
                                                     <li>
                                                         <Link to="/about-us">About Us</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/services">Services</Link>
                                                     </li>
 
                                                     <li>

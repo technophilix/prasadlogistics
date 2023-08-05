@@ -1,29 +1,33 @@
 import logo from './logo.svg';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
 import Home from "./page/Home";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
 import About from "./page/About";
 import Contact from "./page/Contact";
+import Service from "./page/Service";
+import Admin from "./page/Admin";
+import Login from "./page/Login";
+
 function App() {
-  return (
-      <BrowserRouter>
- <Header />
-          <Routes>
-              <Route  path={'/'} element={<Home />} />
-              <Route  path={'/about-us'} element={<About />} />
-              <Route  path={'/contact'} element={<Contact/>} />
+
+    return (
+        <BrowserRouter>
+
+            <Routes>
+                <Route path={'/'} element={<Home/>}/>
+                <Route path={'/about-us'} element={<About/>}/>
+                <Route path={'/contact'} element={<Contact/>}/>
+                <Route path={'/services'} element={<Service/>}/>
+                <Route path={'/adminhome'} element={<Admin/>}/>
+                <Route path={'/admin'} element={<Login/>}/>
+            </Routes>
 
 
-          </Routes>
-
-          <Footer/>
-      </BrowserRouter>
+        </BrowserRouter>
 
 
-
-
-  );
+    );
 }
 
 export default App;

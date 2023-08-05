@@ -10,6 +10,7 @@ import brn from "../realassets/bnr-img.png"
 import shape1 from "../realassets/shape-1.png"
 import shape2 from "../realassets/shape-2.png"
 import bookmockup from "../realassets/book-mockup.png"
+import Layout from "./Layout";
 
 
 const Home = () => {
@@ -35,14 +36,7 @@ const Home = () => {
                                         transit of commodities to our clients.
                                     </p>
                                 </div>
-                                <div className="bnr-btn wow fadeInUp">
-                                    <Link
-                                        className="readon consultant get-green3"
-                                        to={'/contact'}
-                                    >
-                                        Contact
-                                    </Link>
-                                </div>
+
                             </div>
                         </div>
                         <div className="col-lg-5">
@@ -53,20 +47,20 @@ const Home = () => {
                                         src={brn}
                                         alt="Images"
                                     />
-                                    <div className="shape-img one">
-                                        <img
-                                            className="veritcal3"
-                                            src={shape1}
-                                            alt="Images"
-                                        />
-                                    </div>
-                                    <div className="shape-img two">
-                                        <img
-                                            className="horizontal"
-                                            src={shape2}
-                                            alt="Images"
-                                        />
-                                    </div>
+                                    {/*<div className="shape-img one">*/}
+                                    {/*    <img*/}
+                                    {/*        className="veritcal3"*/}
+                                    {/*        src={shape1}*/}
+                                    {/*        alt="Images"*/}
+                                    {/*    />*/}
+                                    {/*</div>*/}
+                                    {/*<div className="shape-img two">*/}
+                                    {/*    <img*/}
+                                    {/*        className="horizontal"*/}
+                                    {/*        src={shape2}*/}
+                                    {/*        alt="Images"*/}
+                                    {/*    />*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>
@@ -166,7 +160,7 @@ const Home = () => {
                                 <div className="address-text">
                                     <span className="label">Call Us</span>
                                     <span className="des">
-                  (+91)7865060568
+                  +917865060568
                   <br/>
                 </span>
                                 </div>
@@ -197,18 +191,12 @@ const Home = () => {
                                         <a href="#">
                                             <i className="fa fa-facebook"/>
                                         </a>
-                                        <a className="icon2" href="#">
-                                            <i className="fa fa-twitter"/>
-                                        </a>
+
                                         <a className="icon3" href="#">
                                             <i className="fa fa-youtube"/>
                                         </a>
-                                        <a className="icon4" href="#">
-                                            <i className="fa fa-linkedin"/>
-                                        </a>
-                                        <a className="icon5" href="#">
-                                            <i className="fa fa-instagram"/>
-                                        </a>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -228,4 +216,4 @@ const Home = () => {
         ;
 };
 
-export default Home;
+export default Layout(Home);

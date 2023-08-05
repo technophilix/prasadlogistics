@@ -1,201 +1,56 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import testi1 from "../realassets/testi-1.png"
 import shape3 from  "../realassets/shape3.png"
 import rating2 from  "../realassets/ratting2.png"
 import testi2 from  "../realassets/testi-2.png"
 import testi3 from  "../realassets/testi-3.png"
+import {buckedID, client, collectionID, databaseID, account} from "../Appwrite";
+import {Storage} from "appwrite";
 const Testimonial = () => {
+    const [images, setImages] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const storage = new Storage(client);
+    const fetchImages = async () => {
+
+        try {
+            const response = await storage.listFiles(buckedID);
+            setImages(response.files);
+            console.log(response.files)
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error retrieving images:', error);
+        }
+    };
+    useEffect(() => {
+
+        fetchImages()
+
+    }, []);
+
     return (
         <div className="rs-testimonial testimonial-style1 testimonial-modify1 gray-bg9 pt-135 pb-150 md-pt-75 md-pb-80">
             <div className="container">
                 <div className="sec-title text-center mb-50">
-                    <span className="sub-text sub-text2 sub-text5">Testimonial</span>
+                    <span className="sub-text sub-text2 sub-text5">Our Satisfied Customers</span>
                     <h2 className="title">
                         Transformative Experience: A Testimonial of Unparalleled Growth and Inspiration
                     </h2>
+
+                    <div className={'row'}>
+                        {images.map((image) => (
+                            <div className={'col-3'} style={{position: "relative", padding: "2%"}}
+                                 key={image.$id}>
+                                <img
+                                    src={`https://cloud.appwrite.io/v1/storage/buckets/${buckedID}/files/${image.$id}/view?project=64b15c712d1fd775710f`}
+                                    alt={image.name}/>
+
+                            </div>
+                        ))}
+                    </div>
+
+
                 </div>
-                <div className="slider testi-slide-1">
-                    <div className="testi-item">
-                        <div className="testi-images">
-                            <div className="image-wrap">
-                                <img
-                                    src={testi1}
-                                    alt="Images"
-                                />
-                                <div className="animate-shape">
-                                    <img
-                                        src={shape3}
-                                        alt="Images"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testi-wrap">
-                            <div className="testi-content">
-                                <div className="rattings">
-                                    <img
-                                        src={rating2}
-                                        alt="Images"
-                                    />
-                                </div>
-                                <p className="desc">
-                                    It’s incredible. it’s really wonderful. bcom has completely
-                                    surpassed our expect. Urna porttitor rhoncus dolor purus non
-                                    enim praesent at the facilisis lectus. Adipiscing tristique
-                                    risus feugiat fermentum.
-                                </p>
-                                <div className="testi-information">
-                                    <div className="testi-name">Theresa Webb</div>
-                                    <span className="testi-title">CEO, Bribbble LLC</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testi-item">
-                        <div className="testi-images">
-                            <div className="image-wrap">
-                                <img
-                                    src={testi2}
-                                    alt="Images"
-                                />
-                                <div className="animate-shape">
-                                    <img
-                                        src={shape3}
-                                        alt="Images"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testi-wrap">
-                            <div className="testi-content">
-                                <div className="rattings">
-                                    <img
-                                        src={rating2}
-                                        alt="Images"
-                                    />
-                                </div>
-                                <p className="desc">
-                                    It’s incredible. it’s really wonderful. bcom has completely
-                                    surpassed our expect. Urna porttitor rhoncus dolor purus non
-                                    enim praesent at the facilisis lectus. Adipiscing tristique
-                                    risus feugiat fermentum.
-                                </p>
-                                <div className="testi-information">
-                                    <div className="testi-name">Micheal Holding</div>
-                                    <span className="testi-title">Personal Counseling</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testi-item">
-                        <div className="testi-images">
-                            <div className="image-wrap">
-                                <img
-                                    src={testi3}
-                                    alt="Images"
-                                />
-                                <div className="animate-shape">
-                                    <img
-                                        src={shape3}
-                                        alt="Images"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testi-wrap">
-                            <div className="testi-content">
-                                <div className="rattings">
-                                    <img
-                                        src={rating2}
-                                        alt="Images"
-                                    />
-                                </div>
-                                <p className="desc">
-                                    It’s incredible. it’s really wonderful. bcom has completely
-                                    surpassed our expect. Urna porttitor rhoncus dolor purus non
-                                    enim praesent at the facilisis lectus. Adipiscing tristique
-                                    risus feugiat fermentum.
-                                </p>
-                                <div className="testi-information">
-                                    <div className="testi-name">Jon Alether</div>
-                                    <span className="testi-title">Web Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testi-item">
-                        <div className="testi-images">
-                            <div className="image-wrap">
-                                <img
-                                    src={testi1}
-                                    alt="Images"
-                                />
-                                <div className="animate-shape">
-                                    <img
-                                        src={shape3}
-                                        alt="Images"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testi-wrap">
-                            <div className="testi-content">
-                                <div className="rattings">
-                                    <img
-                                        src={rating2}
-                                        alt="Images"
-                                    />
-                                </div>
-                                <p className="desc">
-                                    It’s incredible. it’s really wonderful. bcom has completely
-                                    surpassed our expect. Urna porttitor rhoncus dolor purus non
-                                    enim praesent at the facilisis lectus. Adipiscing tristique
-                                    risus feugiat fermentum.
-                                </p>
-                                <div className="testi-information">
-                                    <div className="testi-name">Theresa Webb</div>
-                                    <span className="testi-title">CEO, Bribbble LLC</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="testi-item">
-                        <div className="testi-images">
-                            <div className="image-wrap">
-                                <img
-                                    src={testi2}
-                                    alt="Images"
-                                />
-                                <div className="animate-shape">
-                                    <img
-                                        src={shape3}
-                                        alt="Images"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="testi-wrap">
-                            <div className="testi-content">
-                                <div className="rattings">
-                                    <img
-                                        src={rating2}
-                                        alt="Images"
-                                    />
-                                </div>
-                                <p className="desc">
-                                    It’s incredible. it’s really wonderful. bcom has completely
-                                    surpassed our expect. Urna porttitor rhoncus dolor purus non
-                                    enim praesent at the facilisis lectus. Adipiscing tristique
-                                    risus feugiat fermentum.
-                                </p>
-                                <div className="testi-information">
-                                    <div className="testi-name">Micheal Holding</div>
-                                    <span className="testi-title">Personal Counseling</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     );
