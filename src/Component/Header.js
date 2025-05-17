@@ -108,7 +108,7 @@ const Header = () => {
                                     <div className="expand-btn-inner">
                                         <ul>
                                             <li className="btn-quote">
-                                                <a href="#">Get a Quote</a>
+                                                <Link to={'/certificate'}>Catalogue</Link>
                                             </li>
                                             <li className="nav-link">
                                                 <a

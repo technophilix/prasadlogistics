@@ -8,6 +8,8 @@ import Contact from "./page/Contact";
 import Service from "./page/Service";
 import Admin from "./page/Admin";
 import Login from "./page/Login";
+import NotFound from "./page/Notfound";
+import PDFViewer from "./page/Certificate";
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
                 <Route path={'/services'} element={<Service/>}/>
                 <Route path={'/adminhome'} element={<Admin/>}/>
                 <Route path={'/admin'} element={<Login/>}/>
+                <Route path={'/certificate'} element={<PDFViewer/>}/>
+                <Route path={'*'} element={<NotFound/>}/>
             </Routes>
 
 
